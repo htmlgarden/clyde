@@ -1,0 +1,163 @@
+body {
+  color: #1d1502;
+  font-size: 20px;
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #fffdf8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*------------
+Header
+------------*/
+/* サイト名 */
+header h1 {
+  padding-top: 23px;
+  padding-bottom: 29px;
+}
+
+/* グローバルメニュー */
+header nav {
+  margin-bottom: 36px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  color: #54410c;
+  font-size: 18px;
+  border-top: 2px solid #6a6a6a;
+  border-bottom: 2px solid #6a6a6a;
+}
+header nav li {
+  padding-left: 48px;
+  padding-right: 48px;
+  display: inline;
+}
+header nav li a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+header nav li.active a {
+  color: #000;
+  font-weight: bold;
+}
+
+/*------------
+メインビジュアル
+------------*/
+p.visual {
+  padding-bottom: 67px;
+}
+
+/*------------
+Main
+------------*/
+main {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 67px;
+}
+
+/* セクション */
+main section {
+  margin-bottom: 67px;
+  border-bottom: 3px solid #000;
+}
+
+/* 見出し共通 */
+main section h2 {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+}
+
+/* ラウンジ画像 */
+main section.lounge ul {
+  padding-bottom: 67px;
+}
+main section.lounge li {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline;
+}
+
+/* LOUNGE & DRINKERY 説明 */
+main section.lounge p {
+  padding-bottom: 50px;
+  line-height: 35px;
+  text-align: left;
+}
+
+/* イベント画像 */
+main .event li {
+  padding-bottom: 50px;
+}
+
+/* バナー */
+main aside a:hover {
+  opacity: 0.7;
+}
+
+/*------------
+Footer
+------------*/
+footer {
+  padding-top: 42px;
+  background-color: #322707;
+}
+
+/* 営業時間 */
+footer section {
+  width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: #5f4e1c;
+}
+footer section h2 {
+  padding-bottom: 6px;
+}
+footer section p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* ロゴ & 地図 */
+footer p.map {
+  padding-bottom: 30px;
+}
+
+/* 連絡先 */
+footer address {
+  padding-bottom: 30px;
+  color: #fffdf8;
+  font-size: 18px;
+}
+footer address img {
+  padding-right: 9px;
+}
+
+/* Copyright */
+footer p.copyright {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  color: #fffdf8;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.15;
+  background-color: #000;
+}
