@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@700&display=swap");
+
+/* 自動スクロール */
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1d1502;
+  font-size: 20px;
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+  text-align: center;
+  line-height: normal;
+  background-color: #fffdf8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*------------
+Header
+------------*/
+/* サイト名 */
+header h1 {
+  padding-top: 23px;
+  padding-bottom: 29px;
+}
+
+/* グローバルメニュー */
+nav {
+  margin-bottom: 36px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  color: #54410c;
+  font-size: 18px;
+  background-color: rgba(255, 253, 248, 0.95);
+  border-top: 2px solid #6a6a6a;
+  border-bottom: 2px solid #6a6a6a;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav li a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+nav li.active a {
+  color: #000;
+  font-weight: bold;
+}
+
+/*------------
+Main
+------------*/
+main {
+  padding-bottom: 67px;
+}
+
+/* 見出し */
+main article h1 {
+  padding-top: 31px;
+  margin-bottom: 67px;
+  padding-bottom: 57px;
+  font-size: 40px;
+  font-family: "Kaisei Tokumin", serif;
+  background-image: url(../img/h1_bottom.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+/* バナー */
+main aside a:hover {
+  opacity: 0.7;
+}
+
+/*------------
+Footer
+------------*/
+footer {
+  padding-top: 42px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #322707;
+}
+
+/* 営業時間 */
+footer section {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: #5f4e1c;
+}
+footer section h2 {
+  padding-bottom: 6px;
+}
+footer section p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* ロゴ & 地図 */
+footer p.map {
+  padding-bottom: 30px;
+}
+
+/* 連絡先 */
+footer address {
+  padding-bottom: 30px;
+  color: #fffdf8;
+  font-size: 18px;
+}
+footer address img {
+  padding-right: 9px;
+}
+
+/* Copyright */
+footer p.copyright {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  color: #fffdf8;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #000;
+}
+
+/* Pagetop */
+footer p.pagetop {
+  position: fixed;
+  bottom: 34px;
+  right: 34px;
+}
+footer p.pagetop a:hover {
+  opacity: 0.7;
+}
+
+/*------------
+レスポンシブ
+------------*/
+@media (max-width: 767px) {
+  nav {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    position: static;
+  }
+  nav ul {
+    line-height: 38px;
+    display: block;
+  }
+  footer p.copyright span {
+    display: none;
+  }
+  footer p.pagetop {
+    right: 15px;
+  }
+}

@@ -1,0 +1,61 @@
+@import url(common.css);
+
+/*------------
+トップページ
+------------*/
+/* メインビジュアル */
+p.visual {
+  padding-bottom: 67px;
+}
+
+/*------------
+Main
+------------*/
+/* セクション */
+main section {
+  margin-bottom: 67px;
+  border-bottom: 3px solid #000;
+}
+
+/* 見出し共通 */
+main section h2 {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 28px;
+  font-family: "Kaisei Tokumin", serif;
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+}
+
+/* LOUNGE & DRINKERY 画像 */
+main section.lounge ul {
+  padding-bottom: 67px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* LOUNGE & DRINKERY 説明 */
+main section.lounge p {
+  padding-bottom: 50px;
+  line-height: 35px;
+  text-align: left;
+}
+
+/* イベント画像 */
+main section.event li {
+  padding-bottom: 50px;
+}
+
+/* レスポンシブ */
+@media (max-width: 767px) {
+  p.visual img {
+    height: 300px;
+    object-fit: cover;
+    object-position: right;
+  }
+}

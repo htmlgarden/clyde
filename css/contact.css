@@ -1,0 +1,99 @@
+@import url(common.css);
+
+/*------------
+お問い合わせ
+------------*/
+/* フォーム */
+main form {
+  padding-bottom: 67px;
+}
+
+/* FlexBox */
+main form div.flex {
+  padding: 38px 8.5%;
+  margin-bottom: 10px;
+  text-align: left;
+  border: 1px solid #4a4a4a;
+  display: flex;
+  column-gap: 30px;
+}
+
+main form div.left,
+main form div.right {
+  flex: 1;
+}
+
+/* フィールドセット */
+main form div.left fieldset {
+  padding-bottom: 30px;
+}
+main form div.left fieldset:last-child {
+  padding-bottom: 0;
+}
+
+/* ラベル */
+main form legend {
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+/* フォーム部品 */
+input,
+textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #4a4a4a;
+  outline: none;
+}
+textarea {
+  height: 282px;
+  resize: vertical;
+}
+main form button {
+  width: 160px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #fffdf8;
+  background-color: #6b5311;
+  border: none;
+  cursor: pointer;
+}
+main form button:hover {
+  opacity: 0.7;
+}
+
+/* 補足 */
+main form aside {
+  padding-bottom: 20px;
+  font-size: 16px;
+  text-align: right;
+}
+
+/* 個人情報保護方針 */
+main section {
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 67px;
+  padding: 13px 30px;
+  color: #fffdf8;
+  font-size: 16px;
+  background-color: #6b5311;
+}
+main section h2 {
+  padding-bottom: 6px;
+}
+main section p {
+  text-align: left;
+}
+
+/* レスポンシブ */
+@media (max-width: 767px) {
+  main form div.flex {
+    padding: 28x;
+    display: block;
+  }
+  main form div.left fieldset:last-child {
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,75 @@
+@import url(common.css);
+
+/*------------
+メニュー
+------------*/
+/* FlexBox */
+main .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* メニューブロック */
+main article section {
+  margin-bottom: 67px;
+  padding: 42px 28px;
+  border: 2px solid #4a4a4a;
+  flex-basis: 48.2%;
+}
+
+/* メニュー写真 */
+main article p.photo {
+  padding-bottom: 22px;
+}
+
+/* メニュー見出し */
+main article h2 {
+  margin-bottom: 23px;
+  padding-bottom: 48px;
+  color: #54410c;
+  font-size: 24px;
+  font-weight: bold;
+  background-image: url(../img/line.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+/* メニュー説明 */
+main article p.text {
+  padding-bottom: 12px;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* メニュー価格 */
+main article p.price {
+  padding-bottom: 19px;
+  color: #6b5311;
+  font-size: 24px;
+}
+
+/* リンクボタン */
+main article p.more a {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  font-size: 18px;
+  line-height: 60px;
+  background-color: #6b5311;
+  display: block;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 23px center;
+}
+main article p.more a:hover {
+  opacity: 0.7;
+}
+
+/* レスポンシブ */
+@media (max-width: 991px) {
+  main .flex {
+    display: block;
+  }
+}
